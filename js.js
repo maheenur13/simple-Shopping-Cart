@@ -1,5 +1,5 @@
 document.getElementById('plusItem').addEventListener('click', function() {
-    let newCount = increasingItems('inputValue');
+    increasingItems('inputValue');
     mobilePriceIncrease('phonePrice');
 })
 document.getElementById('decreaseItem').addEventListener('click', function() {
@@ -20,7 +20,7 @@ function mobilePriceIncrease(phonePrice) {
     let updateValue = phoneValue.innerText;
     let convertPhonePrice = parseInt(updateValue);
     console.log(convertPhonePrice);
-    let finalPrice = convertPhonePrice + convertPhonePrice;
+    let finalPrice = convertPhonePrice + 1219;
     phoneValue.innerText = finalPrice;
 
 }
@@ -40,6 +40,6 @@ function increasingItems(id) {
     let newCount = increaseItem + 1;
     item.value = newCount;
     // mobilePriceIncrease(id,newCount);
-    return newCount;
+    // return newCount;
 
 }
